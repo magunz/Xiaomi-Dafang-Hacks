@@ -97,7 +97,8 @@ else
   echo "Warning: You have to configure wpa_supplicant in order to use wifi. Please see /system/sdcard/config/wpa_supplicant.conf.dist for further instructions."
   fi
   MAC=$(grep MAC < /params/config/.product_config | cut -c16-27 | sed 's/\(..\)/\1:/g;s/:$//')
-  insmod /system/sdcard/driver/rtl8189ftv.ko rtw_initmac="$MAC"
+  insmod /driver/rtl8189ftv.ko rtw_initmac="$MAC"
+  # insmod /system/sdcard/driver/rtl8189ftv.ko rtw_initmac="$MAC"
   wpa_supplicant_status="$(wpa_supplicant -d -B -i wlan0 -c $CONFIGPATH/wpa_supplicant.conf -P /var/run/wpa_supplicant.pid)"
   echo "wpa_supplicant: $wpa_supplicant_status" >> $LOGPATH
   udhcpc_status=$(udhcpc -i wlan0 -p /var/run/udhcpc.pid -b -x hostname:"$(hostname)")
