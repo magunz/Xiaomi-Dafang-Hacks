@@ -7,9 +7,9 @@ This repository contains custom firmwares for the following devices:
 Name | Picture
 --- | ---
 Xiaomi Dafang | ![Dafang](/dafang.png)
-Xiaomi Xiaofang 1S | ![XiaoFang](/xiaofang.png)
+Xiaomi Xiaofang 1S (Currently not supporte with firmware 5.5.1.353)| ![XiaoFang](/xiaofang.png)
 Wyzecam Pan | ![Dafang](/dafang.png)
-Wyzecam V2 | ![XiaoFang](/xiaofang.png)
+Wyzecam V2 (Currently not supporte with firmware 5.5.1.353)| ![XiaoFang](/xiaofang.png)
 Sannce I21AG, MixSight HX-I2110T2, WanScam HW0036, Escam G02, Digoo BB-M2 | ![XiaoFang](/sannce.jpg)
 Any other Device with Ingenic T10/T20 Device | ![T20](/t20.png)
 
